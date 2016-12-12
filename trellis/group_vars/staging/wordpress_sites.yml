@@ -1,0 +1,18 @@
+# Documentation: https://roots.io/trellis/docs/remote-server-setup/
+# `wordpress_sites` options: https://roots.io/trellis/docs/wordpress-sites
+# Define accompanying passwords/secrets in group_vars/staging/vault.yml
+
+wordpress_sites:
+  movementspacesnetwork.com:
+    site_hosts:
+      - canonical: msn-staging.positiondevapp.com
+    local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
+    repo: git@github.com:positiondev/tni-bedrock.git # replace with your Git repo URL
+    branch: master
+    multisite:
+      enabled: false
+    ssl:
+      enabled: false
+      provider: letsencrypt
+    cache:
+      enabled: false
