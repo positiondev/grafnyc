@@ -4,7 +4,7 @@
 
 For now, we're going to make changes directly on the WordPress server through the admin. But, eventually we would like changes made on Github to be automatically deployed to the server, so any changes made on the current server are just temporary.
 
-Let's aim for next week to start adding data to the site.
+Let's aim for next week to start adding data to the site to give plenty time to explore different plugins.
 
 Please add any TODOs to the Issues in the issues tab.
 
@@ -14,7 +14,7 @@ Cassie and Libby made a Github workshop for AMC earlier this year -- if you want
 
 ## Repo structure
 
-`site` contains WordPress files and settings. It uses [Bedrock](https://roots.io/bedrock/) a base.
+`site` contains WordPress files and settings. It uses [Bedrock](https://roots.io/bedrock/) as a base.
 
 `trellis` contains settings for the server itself. It uses [Trellis](https://roots.io/trellis/).
 
