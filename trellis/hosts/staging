@@ -2,7 +2,7 @@
 # List each machine only once per [group], even if it will host multiple sites.
 
 [staging]
-tni-staging.positiondevapp.com
+grafnyc-staging.positiondevapp.com
 
 [web]
-tni-staging.positiondevapp.com
+grafnyc-staging.positiondevapp.com

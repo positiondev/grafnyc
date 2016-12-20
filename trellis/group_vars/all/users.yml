@@ -1,5 +1,4 @@
 # Documentation: https://roots.io/trellis/docs/ssh-keys/
-admin_user: admin
 
 # Also define 'vault_users' (`group_vars/staging/vault.yml`, `group_vars/production/vault.yml`)
 users:
@@ -13,7 +12,7 @@ users:
     groups:
       - sudo
     keys:
-      - "{{ lookup('file', '~/.ssh/aws-tni.pub') }}"
+      - "{{ lookup('file', '~/.ssh/aws-eb.pub') }}"
       # - https://github.com/username.keys
 
 admin_user: ubuntu
