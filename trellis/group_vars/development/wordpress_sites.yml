@@ -3,11 +3,11 @@
 # Define accompanying passwords/secrets in group_vars/development/vault.yml
 
 wordpress_sites:
-  movementspacesnetwork.com:
+  grafnyc.org:
     site_hosts:
-      - canonical: movementspacesnetwork.dev
+      - canonical: grafnyc.dev
         redirects:
-          - www.movementspacesnetwork.dev
+          - www.grafnyc.dev
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     admin_email: admin@example.dev
     multisite:

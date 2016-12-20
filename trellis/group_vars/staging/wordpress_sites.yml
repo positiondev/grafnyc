@@ -3,7 +3,7 @@
 # Define accompanying passwords/secrets in group_vars/staging/vault.yml
 
 wordpress_sites:
-  movementspacesnetwork.com:
+  grafnyc.org:
     site_hosts:
       - canonical: grafnyc-staging.positiondevapp.com
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
