@@ -20,3 +20,4 @@ wordpress_sites:
     env:
         wp_home: https://grafnyc-staging.positiondevapp.com
         wp_siteurl: https://grafnyc-staging.positiondevapp.com/wp
+        disable_wp_cron: false
