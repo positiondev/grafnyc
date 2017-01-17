@@ -3,19 +3,23 @@
 # Define accompanying passwords/secrets in group_vars/production/vault.yml
 
 wordpress_sites:
-  example.com:
+  grafnyc.org:
     site_hosts:
-      - canonical: example.com
+      - canonical: grafnyc.org
         redirects:
-          - www.example.com
+          - www.grafnyc.org
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
-    repo: git@github.com:example/example.com.git # replace with your Git repo URL
-    repo_subtree_path: site # relative path to your Bedrock/WP directory in your repo
+    repo: git@github.com:positiondev/grafnyc.git # replace with your Git repo URL
+    repo_subtree_path: site
     branch: master
     multisite:
       enabled: false
     ssl:
-      enabled: false
+      enabled: true
       provider: letsencrypt
     cache:
       enabled: false
+    env:
+        wp_home: https://grafnyc.org
+        wp_siteurl: https://grafnyc.org
+        disable_wp_cron: false
