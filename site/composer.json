@@ -40,7 +40,8 @@
     "oscarotero/env": "^1.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "wpackagist-plugin/events-manager": "5.6.6.1",
-    "wpackagist-plugin/polylang": "2.0.12"
+    "wpackagist-plugin/polylang": "2.0.12",
+    "wpackagist-plugin/updraftplus": "1.12.30"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
