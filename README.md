@@ -32,6 +32,7 @@ Cassie and Libby made a Github workshop for AMC earlier this year -- if you want
  * Create a directory for development
  * Inside directory, `git clone git@github.com:positiondev/grafnyc.git`
  * Install the dependencies for Trellis: [instructions on root.io](https://roots.io/trellis/docs/installing-trellis/).
+ * You'll also need passlib: `sudo pip install passlib`
  * Make sure you have a `.vault_pass` in the Trellis directory.
  * Run `vagrant up`
  * (If there's an error or you make changes, you may have to run `vagrant provision`.)
@@ -44,6 +45,16 @@ Cassie and Libby made a Github workshop for AMC earlier this year -- if you want
  Host grafnyc-staging.positiondevapp.com
   ForwardAgent yes
 ```
+
+* Back up the DB:
+  * `ssh ubuntu@grafnyc-staging.positiondevapp.com`
+  * If permissions are wrong: `chmod 600 aws-eb.pem`
+  * `sudo su web` to become web user
+  * `cd /srv/www/grafnyc.org/current`
+  * `wp db export --add-drop-table`
+  * Disconnect
+  * `scp ubuntu@grafnyc-staging.positiondevapp.com:/srv/www/grafnyc.org/current/grafnyc_org_staging.sql .` 
+   
 
 
  * Run `ansible-playbook server.yml -e env=staging`
