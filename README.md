@@ -20,22 +20,31 @@ Cassie and Libby made a Github workshop for AMC earlier this year -- if you want
 
 ## ** Everything after this point is a Work in Progress!! **
 
-## Using Trellis
+ * Create a `.vault_pass` file in the trellis directory and put the Vault password in it
+ * Put SSH key in `.ssh` and add new sub-domain and keys to `.ssh/config`:
+```
+ Host grafnyc-staging.positiondevapp.com
+  ForwardAgent yes
+```
 
 ## For development on your local machine
 
- * Create `movementspacesnetwork.com` directory
- * Inside directory, `git clone git@github.com:positiondev/mxlinche.git`
+ * Create a directory for development
+ * Inside directory, `git clone git@github.com:positiondev/grafnyc.git`
+ * Install the dependencies for Trellis: [instructions on root.io](https://roots.io/trellis/docs/installing-trellis/).
+ * Make sure you have a `.vault_pass` in the Trellis directory.
  * Run `vagrant up`
+ * (If there's an error or you make changes, you may have to run `vagrant provision`.)
 
 ## For deployment to AWS server
 
  * Create a `.vault_pass` file in the trellis directory and put the Vault password in it
  * Put SSH key in `.ssh` and add new sub-domain and keys to `.ssh/config`:
 ```
- Host msn-staging.positiondevapp.com
+ Host grafnyc-staging.positiondevapp.com
   ForwardAgent yes
 ```
+
 
  * Run `ansible-playbook server.yml -e env=staging`
  * Run `./bin/deploy.sh staging movementspacesnetwork.com`
