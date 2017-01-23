@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "08004922cd37b50806e85b4990f30dd3",
+    "content-hash": "3e0f39f82fbc9fac9a47d92a6df1639c",
     "packages": [
         {
             "name": "composer/installers",
@@ -339,6 +339,46 @@
                 "environment"
             ],
             "time": "2016-09-01T10:05:43+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/amazon-s3-and-cloudfront",
+            "version": "1.1.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/amazon-s3-and-cloudfront/",
+                "reference": "tags/1.1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.1.1.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/amazon-s3-and-cloudfront/"
+        },
+        {
+            "name": "wpackagist-plugin/amazon-web-services",
+            "version": "1.0.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/amazon-web-services/",
+                "reference": "tags/1.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/amazon-web-services.1.0.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/amazon-web-services/"
         },
         {
             "name": "wpackagist-plugin/events-manager",
