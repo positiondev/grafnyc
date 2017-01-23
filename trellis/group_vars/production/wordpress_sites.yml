@@ -23,3 +23,4 @@ wordpress_sites:
         wp_home: https://grafnyc.org
         wp_siteurl: https://grafnyc.org
         disable_wp_cron: false
+        db_host: graf-production.c0x5rp4xdyae.us-east-1.rds.amazonaws.com

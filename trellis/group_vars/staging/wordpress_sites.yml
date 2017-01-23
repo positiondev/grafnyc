@@ -21,3 +21,4 @@ wordpress_sites:
         wp_home: https://grafnyc-staging.positiondevapp.com
         wp_siteurl: https://grafnyc-staging.positiondevapp.com/wp
         disable_wp_cron: false
+        db_host: graf-staging.cmggyeyyr1yf.us-east-1.rds.amazonaws.com
